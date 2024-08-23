@@ -1,0 +1,41 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<main>
+			<defs>
+				<linearGradient
+					id="paint0_linear_1805_24383"
+					x1="247.358"
+					y1="0"
+					x2="247.358"
+					y2="622.479"
+					gradientUnits="userSpaceOnUse"
+				>
+					<stop stop-opacity="0.9"></stop>
+					<stop offset="1" stop-opacity="0.2"></stop>
+				</linearGradient>
+			</defs>
+		</main>
+		<h1 class="text-gradient">Weather and Whispers</h1>
+		<p class="instructions">
+			This is a Hello World in project.<br />
+			<strong></strong>
+		</p>
+	</body>
+</html>
