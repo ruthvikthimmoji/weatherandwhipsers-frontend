@@ -1,36 +1,13 @@
 ---
 import Layout from "../components/Layout.astro";
-import EmailLocationForm from "../components/EmailLocationForm.astro";
-import SubscriptionCard from "../components/SubscriptionCard.astro";
+import EmailLocationForm from "../components/SubscriptionForm.astro";
 import TnC from "../components/TnC.astro";
 
-const plans = [
-	{
-		title: "Free Plan",
-		price: 0,
-		features: ["Every Monday", "Previous Week's News", "Monday's Weather"],
-		featuresExcluded: ["Daily Updates", "Upcoming Week's Weather"],
-	},
-	{
-		title: "Standard Plan",
-		price: 59,
-		features: [
-			"All of Free Plan",
-			"Previous Day's News",
-			"Upcoming Week's Weather",
-		],
-		featuresExcluded: [],
-	},
-];
+
 ---
 
 <Layout title="Weather and Whispers" />
 <EmailLocationForm />
-<div class="w-full mx-auto">
-<div class="md:flex md:justify-center grid">
-	{plans.map((plan) => <SubscriptionCard plan={plan} />)}
-</div>
-</div>
 <TnC title="Weather and Whispers" />
 
 <style is:global>
